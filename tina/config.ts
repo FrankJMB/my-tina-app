@@ -4,12 +4,12 @@ import { defineConfig } from "tinacms";
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
-  clientId: process.env.TINA_CLIENT_ID,
+  clientId: "d461681f-7da8-477b-a813-56376570c383",
   branch:
     process.env.TINA_BRANCH || // custom branch env override
     process.env.VERCEL_GIT_COMMIT_REF! || // Vercel branch env
     process.env.HEAD!, // Netlify branch env
-  token: process.env.TINA_TOKEN,
+  token: "a58be7d055808e32726b28f86a6ed04d191ab327",
   build: {
     outputFolder: "admin",
     publicFolder: "static",
